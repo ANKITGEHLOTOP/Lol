@@ -12,13 +12,13 @@ from tglogging import TelegramLogHandler
 
 # Config 
 class Config(object):
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7053921138:AAGoQZh2x00uTuufuzqEqDYO7YlWQa7KmF8")
-    API_ID = int(os.environ.get("API_ID",  "27498866"))
-    API_HASH = os.environ.get("API_HASH", "96fbb6ad2e11ab04e83ca09ef3f42455")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7872473343:AAGNfrMewYX6uhdcavYoioxOoECL41wxWlc")
+    API_ID = int(os.environ.get("API_ID",  "29905645"))
+    API_HASH = os.environ.get("API_HASH", "e5a701f6e0b5fb659cb57a230b9a3feb")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     SESSIONS = "./SESSIONS"
 
-    AUTH_USERS = os.environ.get('AUTH_USERS', '6488911325').split(',')
+    AUTH_USERS = os.environ.get('AUTH_USERS', '8102112566').split(',')
     for i in range(len(AUTH_USERS)):
         AUTH_USERS[i] = int(AUTH_USERS[i])
 
@@ -26,7 +26,7 @@ class Config(object):
     for i in range(len(GROUPS)):
         GROUPS[i] = int(GROUPS[i])
 
-    LOG_CH = os.environ.get("LOG_CH", "-1002059340064")
+    LOG_CH = os.environ.get("LOG_CH", "-1002756256056")
 
 # TelegramLogHandler is a custom handler which is inherited from an existing handler. ie, StreamHandler.
 logging.basicConfig(
@@ -50,10 +50,14 @@ LOGGER.info("live log streaming to telegram.")
 
 # Store
 class Store(object):
-    CPTOKEN = "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgzNjkyMTIsIm9yZ0lkIjoyNjA1LCJ0eXBlIjoxLCJtb2JpbGUiOiI5MTcwODI3NzQyODkiLCJuYW1lIjoiQWNlIiwiZW1haWwiOm51bGwsImlzRmlyc3RMb2dpbiI6dHJ1ZSwiZGVmYXVsdExhbmd1YWdlIjpudWxsLCJjb3VudHJ5Q29kZSI6IklOIiwiaXNJbnRlcm5hdGlvbmFsIjowLCJpYXQiOjE2NDMyODE4NzcsImV4cCI6MTY0Mzg4NjY3N30.hM33P2ai6ivdzxPPfm01LAd4JWv-vnrSxGXqvCirCSpUfhhofpeqyeHPxtstXwe0"
-    SPROUT_URL = "https://discuss.oliveboard.in/"
-    ADDA_TOKEN = ""
-    THUMB_URL = "https://telegra.ph/file/84870d6d89b893e59c5f0.jpg"
+api_url = "http://master-api-v3.vercel.app/"
+api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzkxOTMzNDE5NSIsInRnX3VzZXJuYW1lIjoi4p61IFtvZmZsaW5lXSIsImlhdCI6MTczODY5MjA3N30.SXzZ1MZcvMp5sGESj0hBKSghhxJ3k1GTWoBUbivUe1I"
+token_cp ='eyJjb3Vyc2VJZCI6IjQ1NjY4NyIsInR1dG9ySWQiOm51bGwsIm9yZ0lkIjo0ODA2MTksImNhdGVnb3J5SWQiOm51bGx9r'
+adda_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkcGthNTQ3MEBnbWFpbC5jb20iLCJhdWQiOiIxNzg2OTYwNSIsImlhdCI6MTc0NDk0NDQ2NCwiaXNzIjoiYWRkYTI0Ny5jb20iLCJuYW1lIjoiZHBrYSIsImVtYWlsIjoiZHBrYTU0NzBAZ21haWwuY29tIiwicGhvbmUiOiI3MzUyNDA0MTc2IiwidXNlcklkIjoiYWRkYS52MS41NzMyNmRmODVkZDkxZDRiNDkxN2FiZDExN2IwN2ZjOCIsImxvZ2luQXBpVmVyc2lvbiI6MX0.0QOuYFMkCEdVmwMVIPeETa6Kxr70zEslWOIAfC_ylhbku76nDcaBoNVvqN4HivWNwlyT0jkUKjWxZ8AbdorMLg"
+photologo = 'https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png' #https://envs.sh/GV0.jpg
+photoyt = 'https://tinypic.host/images/2025/03/18/YouTube-Logo.wine.png' #https://envs.sh/GVi.jpg
+photocp = 'https://tinypic.host/images/2025/03/28/IMG_20250328_133126.jpg'
+photozip = 'https://envs.sh/cD_.jpg'
 
 # Format
 class Msg(object):
